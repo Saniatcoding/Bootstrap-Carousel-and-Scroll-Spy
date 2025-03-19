@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madridistas</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <style>
+      * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: rgb(120, 88, 207);
+}
+
+.home {
+  height: 100vh;
+  background: url("https://pictures.tribuna.com/image/6ba004a7-cf94-47d5-b509-d42b64254dff?width=1920&quality=70")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.homecontent {
+  max-width: 600px;
+}
+
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.logo:hover {
+  color: rgb(236, 220, 220);
+  text-decoration: none;
+}
+
+.homecontent h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 540;
+}
+
+.homecontent h2 {
+  color: rgb(0, 0, 0);
+}
+
+.homecontent p {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.homecontent .btn-box:hover {
+  transform: scale(1.02);
+}
+
+.homecontent .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  font-size: 19px;
+  color: rgb(235, 216, 54);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-box a:nth-child(2) {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.homesci {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homesci a {
+  position: relative;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.homesci a:hover {
+  transform: scale(1.2);
+  color: rgb(85, 59, 59);
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./home.html" class="logo">Madridistas.</a>
+
+      <nav class="navbar">
+        <a href="./home.html" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./fixture.html">Fixtures</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="homecontent">
+        <h1>We are Madridistas!</h1>
+        <h2>GANA MADRID!</h2>
+        <p>
+          Real Madrid Club de Fútbol commonly referred to as Real Madrid, is a
+          Spanish professional football club based in Madrid.
+          <b>Founded in 1902</b> as Madrid Football Club, the club has
+          traditionally worn a white home kit since its inception. The honorific
+          title real is Spanish for "Royal" and was bestowed to the club by King
+          Alfonso XIII in 1920 along with the crown in the club crest. Real
+          Madrid have played their home matches in the 85,000-capacity
+          <b>Santiago Bernabéu in Madrid since 1947.</b>
+        </p>
+        <div class="btn-box">
+          <a href="https://en.wikipedia.org/wiki/Real_Madrid_CF">Learn More</a>
+          <a href="https://www.realmadrid.com/en-US/tickets">Buy Tickets</a>
+        </div>
+      </div>
+
+      <div class="homesci">
+        <a href="https://www.instagram.com/realmadrid/?hl=en"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://www.threads.net/@realmadrid?xmt=AQGzV6dOTeWgtbeqBE6qYKnsgtEiFLXR4_zCseJc0L8Pd-Q"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/RealMadrid/"
+          ><i class="bx bxl-facebook-circle"></i
+        ></a>
+      </div>
+    </section>
+
+  </body>
+</html>
